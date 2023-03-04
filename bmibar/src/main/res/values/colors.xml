@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bar0_bg">#c94c4c</color>
+    <color name="bar1_bg">#17823a</color>
+    <color name="bar2_bg">#ea9e2b</color>
+    <color name="bar3_bg">#c94c4c</color>
+    <color name="bmi_text">#525252</color>
+    <color name="bmi_text_title">#202130</color>
+    <color name="bmi_section_0">#fcdada</color>
+    <color name="bmi_section_1">#e1efe6</color>
+    <color name="bmi_section_2">#fff2e3</color>
+    <color name="bmi_section_3">#fcdada</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#479F77</color>
+    <color name="grey">#BFBFBF</color>
+</resources>

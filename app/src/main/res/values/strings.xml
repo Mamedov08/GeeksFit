@@ -4,4 +4,9 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="profile">Profile</string>
+
+    <string name="data">Данные</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="exit">ВЫЙТИ ИЗ АККАУНТА</string>
+    <string name="add_photo">Сделать снимок</string>
 </resources>
