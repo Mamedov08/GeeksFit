@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/RgNavigateBack"
+        android:layout_width="19dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:src="@drawable/navigate" />
+
+    <TextView
+        android:id="@+id/VfTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="126px"
+
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/black"
+        android:text="Одноразовый пароль"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/VfTextView2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:text="Введите код подтверждения, который мы только что отправили на ваш адрес электронной почты."
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center">
+
+
+        <EditText
+            android:id="@+id/OTP"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"
+            />
+        <EditText
+            android:id="@+id/OTP1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"
+            />
+        <EditText
+            android:id="@+id/OT2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"
+            />
+        <EditText
+            android:id="@+id/OTP3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fg_textview5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/green"
+            android:padding="12dp"
+            android:text="Отправить код"
+            app:cornerRadius="30dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/VfTextView3"
+
+            android:layout_marginLeft="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:text="Не получили код?  "/>
+
+        <TextView
+            android:id="@+id/VfTextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/green"
+            android:layout_marginTop="400dp"
+            android:textSize="12dp"
+            android:text="Отправить снова"/>
+
+
+</LinearLayout>
+</LinearLayout>

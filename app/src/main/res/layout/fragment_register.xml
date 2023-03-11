@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/register_container"
+    tools:context=".ui.dashboard.LoginFragment">
+
+    <ImageView
+        android:id="@+id/RgNavigateBack"
+        android:layout_width="19dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:src="@drawable/navigate" />
+
+    <TextView
+        android:id="@+id/RgTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="53px"
+        android:layout_marginBottom="14sp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Добро пожаловать! Рады Вас видеть снова!"
+        android:textColor="@color/black"
+
+        android:textSize="36sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="18sp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/RgTextPersonName1"
+            android:paddingStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round_back_primary"
+            android:hint="Имя пользователя"
+            android:textColorHint="@color/grey"
+            android:inputType="textPersonName"
+            android:textColor="@color/grey"/>
+   <EditText
+
+            android:paddingStart="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/RgTextPersonName2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+           android:background="@drawable/round_back_primary"
+            android:hint="Введите e-mai"
+            android:textColorHint="@color/grey"
+            android:inputType="textPersonName"
+            android:textColor="@color/grey"/>
+
+        <EditText
+            android:paddingStart="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/RgTextPersonName3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round_back_primary"
+            android:hint="Пароль"
+
+            android:textColorHint="@color/grey"
+            android:inputType="textPersonName"
+            android:textColor="@color/grey"/>
+
+
+        <EditText
+            android:paddingStart="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="6dp"
+            android:id="@+id/RgTextPersonName4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round_back_primary"
+            android:hint="Подтвердите пароль"
+            android:textColorHint="@color/grey"
+            android:inputType="textPersonName"
+            android:textColor="@color/grey"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/RgTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="18sp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Забыли пароль?"
+            android:layout_marginLeft="220sp"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="18sp"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/register_button1"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Войти"
+            app:cornerRadius="30dp"
+            android:backgroundTint="@color/green"
+            android:layout_marginLeft="32dp">
+
+
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ИЛИ"
+        android:textSize="12dp">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/RgImageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/RgImageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/google">
+
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/RgTextView3"
+            android:layout_marginLeft="88dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="62dp"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:text="Есть аккаунт? "/>
+
+        <TextView
+            android:id="@+id/RgTextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/green"
+            android:layout_marginTop="62dp"
+            android:textSize="12dp"
+            android:text="Войдите сейчас"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
