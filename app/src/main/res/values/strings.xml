@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">GeeksFit</string>
-    <string name="title_gim">Gim</string>
-    <string name="title_payments">Payments</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="profile">Profile</string>
     <!-- TODO: Remove or change this placeholder text -->

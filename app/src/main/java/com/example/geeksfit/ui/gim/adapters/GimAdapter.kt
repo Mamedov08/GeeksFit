@@ -2,11 +2,8 @@ package com.example.geeksfit.ui.gim.adapters
 
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import coil.load
-import com.example.geeksfit.R
 import com.example.geeksfit.databinding.ItemGimBinding
 import com.example.geeksfit.ui.gim.model.GimModel
 

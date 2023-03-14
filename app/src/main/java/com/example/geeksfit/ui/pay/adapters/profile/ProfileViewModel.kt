@@ -1,4 +1,4 @@
-package com.example.geeksfit.ui.profile
+package com.example.geeksfit.ui.pay.adapters.profile
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
