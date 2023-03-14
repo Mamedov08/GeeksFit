@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_gray">
+
+
+    <TextView
+        android:id="@+id/tv_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
+        android:text="@string/tvPay"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_paySystem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18dp"
+        android:text="@string/enterPayO"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pay"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tv_payN"
+        android:layout_width="324dp"
+        android:layout_height="84dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_payName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_paySystem"
+        android:text="@string/UserName"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/tv_payName"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/button_one"
+        android:hint="@string/enterPayS"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_paySystem"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/tv_payNO"
+        android:layout_width="324dp"
+        android:layout_height="84dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/tv_payCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_payName"
+        android:text="@string/card"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/tv_payCard"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/button_one"
+        android:hint="@string/enterPayT"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_payName"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_payNS"
+        android:layout_width="324dp"
+        android:layout_height="84dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/tv_payCardO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_payCard"
+        android:text="@string/CVC"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/tv_payCardO"
+        android:layout_width="128dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="28dp"
+        android:padding="8dp"
+        android:background="@drawable/button_one"
+        android:hint="@string/CVC"
+        android:layout_marginStart="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_payCard"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_payNT"
+        android:layout_width="324dp"
+        android:layout_height="84dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/tv_payCardS"
+        app:layout_constraintTop_toBottomOf="@+id/tv_payCard"
+        android:text="@string/exp."
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/tv_payCardS"
+        android:layout_width="128dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_one"
+        android:hint="@string/exp."
+        android:layout_marginEnd="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_payCard"
+        android:textSize="18sp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cardRV"
+        android:layout_width="348dp"
+        android:layout_height="338dp"
+        android:background="@color/light_gray"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        tools:listitem="@layout/item_card_pay"/>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:layout_marginTop="4dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cOne"
+        android:layout_width="302dp"
+        android:layout_height="312dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cardVO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/firstMonth"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/black"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/cardVS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/accessMonth"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:textColor="@color/black"
+                android:textSize="24sp"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/engageMonth"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/black"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/cardVT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BayOne"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:textColor="@color/black"
+                android:textSize="28sp"/>
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Bay"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24sp"
+                android:textStyle="normal"/>
+
+
+        </LinearLayout>
+
+   </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cSec"
+        android:layout_width="302dp"
+        android:layout_height="312dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPayO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/secondMonth"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/black"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/tvPayS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/accessSecondMonth"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:textColor="@color/black"
+                android:textSize="24sp"/>
+            <TextView
+                android:id="@+id/tv_paySecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/engageMonth"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/black"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/tvPayT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BaySecond"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:textColor="@color/black"
+                android:textSize="28sp"/>
+
+            <Button
+                android:id="@+id/btnBay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Bay"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24sp"
+                android:textStyle="normal"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cThird"
+        android:layout_width="302dp"
+        android:layout_height="312dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cardV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thirdMonth"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/black"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/cardVF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/accessThirdMonth"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:textColor="@color/black"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/engageMonth"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/black"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/cardVN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BayThird"
+                android:textStyle="normal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:textColor="@color/black"
+                android:textSize="28sp"/>
+
+            <Button
+
+                android:layout_width="194dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Bay"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24sp"
+                android:textStyle="normal"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
