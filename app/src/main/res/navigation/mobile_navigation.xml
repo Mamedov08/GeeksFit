@@ -7,43 +7,14 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.geeksfit.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_navigation_home_to_navigation_dashboard"
-            app:destination="@id/navigation_dashboard" />
-    </fragment>
-        android:id="@+id/navigation_dash"
-        android:name="com.example.geeksfit.ui.pay.DashboardFragment"
-        android:label="@string/title_payments"
-        tools:layout="@layout/fragment_pay" />
-
-    <fragment
-        android:id="@+id/navigation_gim"
         android:name="com.example.geeksfit.ui.gim.ui.GimFragment"
-        android:label="@string/title_gim"
+        android:label="@string/title_home"
         tools:layout="@layout/fragment_gim" >
         <action
-            android:id="@+id/action_navigation_gim_to_detailFragment"
-            app:destination="@id/detailFragment" />
+            android:id="@+id/action_navigation_home_to_navigation_dashboard"
+            app:destination="@id/action_navigation_home_to_navigation_dashboard"/>
     </fragment>
 
-    <fragment
-        android:id="@+id/navigation_profile"
-        android:name="com.example.geeksfit.ui.profile.ProfileFragment"
-        android:label="Profile"
-        tools:layout="@layout/fragment_profile" />
-    <fragment
-        android:id="@+id/detailFragment"
-        android:name="com.example.geeksfit.ui.gim.ui.DetailFragment"
-        android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" />
-        tools:layout="@layout/fragment_profile" >
-        <action
-            android:id="@+id/action_navigation_profile_to_navigation_home"
-            app:destination="@id/navigation_home" />
-    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.geeksfit.ui.dashboard.LoginFragment"
@@ -75,24 +46,8 @@
         android:id="@+id/verificationFragment"
         android:name="com.example.geeksfit.ui.dashboard.VerificationFragment"
         android:label="VerificationFragment" />
-    <fragment
-        android:id="@+id/newPasswordFragment"
-        android:name="com.example.geeksfit.ui.dashboard.NewPasswordFragment"
-        android:label="fragment_new_password"
-        tools:layout="@layout/fragment_new_password" >
-        <action
-            android:id="@+id/action_newPasswordFragment_to_succesPasswordFragment"
-            app:destination="@id/succesPasswordFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/succesPasswordFragment"
-        android:name="com.example.geeksfit.ui.dashboard.SuccesPasswordFragment"
-        android:label="fragment_succes_password"
-        tools:layout="@layout/fragment_succes_password" >
-        <action
-            android:id="@+id/action_succesPasswordFragment_to_navigation_profile"
-            app:destination="@id/navigation_profile" />
-    </fragment>
+
+
     <fragment
         android:id="@+id/registrationFragment"
         android:name="com.example.geeksfit.ui.dashboard.RegistrationFragment"
@@ -102,5 +57,7 @@
             android:id="@+id/action_registrationFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
+
+
 
 </navigation>

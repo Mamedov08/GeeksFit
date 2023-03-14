@@ -37,29 +37,29 @@ class GimFragment : Fragment() {
     private fun loadData() {
         val list = ArrayList<GimModel>()
         list.apply {
-
-            add(GimModel(
-                R.string.fit_first (
-                R.drawable.img, R.string.n_hand,
-                R.drawable.img_1,R.string.a_hand,
-                R.drawable.img_2,R.string.b_hand,
-                R.drawable.img_3,R.string.c_hand,
-                R.drawable.img_4,R.string.e_hand)
-
-                R.string.fit_second (
-                R.drawable.img, R.string.p_hand,
-                R.drawable.img_1,R.string.f_hand,
-                R.drawable.img_2,R.string.g_hand,
-                R.drawable.img_3,R.string.h_hand,
-                R.drawable.img_4,R.string.i_hand)
-
-                R.string.fit_third(
-                R.drawable.img, R.string.d_hand,
-                R.drawable.img_1,R.string.j_hand,
-                R.drawable.img_2,R.string.k_hand,
-                R.drawable.img_3,R.string.l_hand,
-                R.drawable.img_4,R.string.m_hand)
-            ))
+//
+//            add(GimModel(
+//                R.string.fit_first (
+//                R.drawable.img, R.string.n_hand,
+//                R.drawable.img_1,R.string.a_hand,
+//                R.drawable.img_2,R.string.b_hand,
+//                R.drawable.img_3,R.string.c_hand,
+//                R.drawable.img_4,R.string.e_hand)
+//
+//                R.string.fit_second (
+//                R.drawable.img, R.string.p_hand,
+//                R.drawable.img_1,R.string.f_hand,
+//                R.drawable.img_2,R.string.g_hand,
+//                R.drawable.img_3,R.string.h_hand,
+//                R.drawable.img_4,R.string.i_hand)
+//
+//                R.string.fit_third(
+//                R.drawable.img, R.string.d_hand,
+//                R.drawable.img_1,R.string.j_hand,
+//                R.drawable.img_2,R.string.k_hand,
+//                R.drawable.img_3,R.string.l_hand,
+//                R.drawable.img_4,R.string.m_hand)
+//            ))
 
         }
         adapter = GimAdapter(list, this::onClickItem)

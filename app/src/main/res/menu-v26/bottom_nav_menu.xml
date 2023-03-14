@@ -4,12 +4,12 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_payments" />
+        android:title="@string/pay" />
 
     <item
         android:id="@+id/navigation_gim"
         android:icon="@drawable/vector2"
-        android:title="@string/title_gim" />
+        android:title="@string/gim" />
 
     <item
         android:id="@+id/navigation_notifications"
