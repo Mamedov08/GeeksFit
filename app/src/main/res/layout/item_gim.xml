@@ -39,7 +39,7 @@
             android:id="@+id/fitImageA"
             android:layout_width="360dp"
             android:layout_height="100dp"
-            android:background="@drawable/img"
+            android:background="@drawable/im"
             android:scaleType="centerCrop"/>
 
         <TextView
