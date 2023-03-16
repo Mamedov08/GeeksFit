@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.geeksfit.R
 import com.example.geeksfit.databinding.FragmentLoginBinding
+
 class LoginFragment : Fragment() {
 
     private lateinit var binding: FragmentLoginBinding
@@ -26,7 +27,6 @@ class LoginFragment : Fragment() {
 
         binding.lgbutton1.setOnClickListener {
             findNavController().navigate(R.id.loginFragment)
-
 
         }
         binding.LgTextView5.setOnClickListener {

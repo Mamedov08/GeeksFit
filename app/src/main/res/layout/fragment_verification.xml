@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <ImageView
         android:id="@+id/RgNavigateBack"
@@ -46,53 +46,52 @@
 
 
         <EditText
-            android:id="@+id/OTP"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:gravity="center"
-            android:inputType="number"
-            android:maxLines="1"
-            android:textColor="@color/white"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:layout_marginEnd="10dp"
-            />
-        <EditText
             android:id="@+id/OTP1"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"
             android:inputType="number"
-            android:maxLines="1"
-            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:maxLength="1"
             android:textSize="30sp"
             android:textStyle="bold"
-            android:layout_marginEnd="10dp"
-            />
+            android:textColor="@color/black" />
+
         <EditText
-            android:id="@+id/OT2"
+            android:id="@+id/OTP2"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"
             android:inputType="number"
-            android:maxLines="1"
-            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:maxLength="1"
             android:textSize="30sp"
             android:textStyle="bold"
-            android:layout_marginEnd="10dp"
-            />
+            android:textColor="@color/black" />
+
         <EditText
             android:id="@+id/OTP3"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"
             android:inputType="number"
-            android:maxLines="1"
-            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:maxLength="1"
             android:textSize="30sp"
             android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/OTP4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:inputType="number"
             android:layout_marginEnd="10dp"
-            />
+            android:maxLength="1"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
 
     </LinearLayout>
 
@@ -112,29 +111,31 @@
             android:text="Отправить код"
             app:cornerRadius="30dp"
             android:textColor="@color/white"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="355dp"
+        android:layout_marginRight="30dp">
 
         <TextView
             android:id="@+id/VfTextView3"
-
-            android:layout_marginLeft="0dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="400dp"
+            android:text="Не получили код?"
             android:textColor="@color/black"
-            android:textSize="12dp"
-            android:text="Не получили код?  "/>
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/VfTextView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:text="Отправить снова"
             android:textColor="@color/green"
-            android:layout_marginTop="400dp"
-            android:textSize="12dp"
-            android:text="Отправить снова"/>
-
-
-</LinearLayout>
+            android:textSize="12sp" />
+    </LinearLayout>
 </LinearLayout>
