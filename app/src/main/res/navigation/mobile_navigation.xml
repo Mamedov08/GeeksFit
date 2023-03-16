@@ -57,7 +57,14 @@
             android:id="@+id/action_registrationFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
-
+    <fragment
+        android:id="@+id/succesPasswordFragment"
+        android:name="com.example.geeksfit.ui.dashboard.SuccesPasswordFragment"
+        android:label="SuccesPasswordFragment" />
+    <fragment
+        android:id="@+id/newPasswordFragment"
+        android:name="com.example.geeksfit.ui.dashboard.NewPasswordFragment"
+        android:label="NewPasswordFragment" />
 
 
 </navigation>

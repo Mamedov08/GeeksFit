@@ -6,15 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.geeksfit.R
+import com.example.geeksfit.databinding.FragmentVerificationBinding
 
+@Suppress("UNREACHABLE_CODE")
 class VerificationFragment : Fragment() {
+    private lateinit var binding: FragmentVerificationBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
+        binding = FragmentVerificationBinding.inflate(layoutInflater)
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_verification, container, false)
+        return (binding.root)
     }
-
 }
