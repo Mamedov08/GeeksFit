@@ -10,8 +10,6 @@ import com.example.geeksfit.R
 import com.example.geeksfit.databinding.FragmentGimBinding
 import com.ui.gim.adapters.GimAdapter
 
-
-
 class GimFragment : Fragment() {
     private lateinit var binding: FragmentGimBinding
     private lateinit var adapter: GimAdapter
@@ -24,7 +22,6 @@ class GimFragment : Fragment() {
         // Inflate the layout for this fragment
         return binding.root
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -33,7 +30,6 @@ class GimFragment : Fragment() {
         binding.rView.setOnClickListener {
             findNavController().navigate(R.id.detailFragment)
         }
-
     }
 }
 

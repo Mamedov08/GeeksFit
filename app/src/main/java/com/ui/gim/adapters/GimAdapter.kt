@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.geeksfit.databinding.ItemGimBinding
-import com.example.geeksfit.ui.gim.model.GimModel
+import com.ui.gim.model.GimModel
 
 class GimAdapter(
 
@@ -13,7 +13,7 @@ class GimAdapter(
     private val onClick: (model: GimModel) -> Unit
 
 ) :
-    RecyclerView.Adapter<com.ui.gim.adapters.GimAdapter.GimViewHolder>() {
+    RecyclerView.Adapter<GimAdapter.GimViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): _root_ide_package_.com.ui.gim.adapters.GimAdapter.GimViewHolder {
         return GimViewHolder(
@@ -32,11 +32,10 @@ class GimAdapter(
     inner class GimViewHolder(private val binding: ItemGimBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(gimModel: GimModel) {
-            binding.titleTV.text=gimModel.title.toString()
+            binding.titleTV.text=gimModel.title
             gimModel.imageA?.let { binding.fitImageA.setImageResource(it) }
-            binding.playlistTvA.text = gimModel.titleA.toString()
             gimModel.imageB?.let { binding.fitImageB.setImageResource(it) }
-            binding.playlistTvB.text = gimModel.titleB.toString()
+            binding.playlistTvB.text = gimModel.titleB
             gimModel.imageC?.let { binding.fitImageC.setImageResource(it) }
             binding.playlistTvC.text = gimModel.titleC
             gimModel.imageD?.let { binding.fitImageD.setImageResource(it) }
@@ -44,11 +43,9 @@ class GimAdapter(
             gimModel.imageE?.let { binding.fitImageE.setImageResource(it) }
             binding.playlistTvE.text = gimModel.titleE
 
-
             itemView.setOnClickListener {
                 onClick(gimModel)
             }
         }
     }
-
 }

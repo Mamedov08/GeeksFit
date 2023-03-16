@@ -5,12 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.res.ColorStateListInflaterCompat.inflate
 import androidx.navigation.fragment.findNavController
 import com.example.geeksfit.R
-import com.example.geeksfit.databinding.ActivityMainBinding.inflate
 import com.example.geeksfit.databinding.FragmentForgotPasswordBinding
-import com.example.geeksfit.databinding.FragmentLoginBinding
+
 
 class ForgotPasswordFragment : Fragment() {
 

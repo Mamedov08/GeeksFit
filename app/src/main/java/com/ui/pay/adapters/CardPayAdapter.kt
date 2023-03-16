@@ -14,7 +14,6 @@ class CardPayAdapter (
     RecyclerView.Adapter<CardPayAdapter.CardPayViewHolder>() {
 
 
-
     override fun onBindViewHolder(holder: CardPayViewHolder, position: Int) {
         holder.bind(array[position])
     }
