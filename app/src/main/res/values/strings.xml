@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">GeeksFit</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
+    <string name="title_gim">Gim</string>
+    <string name="title_pay">Payment</string>
     <string name="title_notifications">Notifications</string>
     <string name="profile">Profile</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -39,7 +39,7 @@
     <string name="firstMonth">1 месяц</string>
     <string name="accessMonth">Доступ к 30 программам</string>
     <string name="engageMonth">Занимайся в любое время, в любом месте</string>
-    <string name="BayOne">500сом</string>
+    <string name="BayFirst">500сом</string>
     <string name="Bay">Купить</string>
     <string name="secondMonth">6 месяцев</string>
     <string name="accessSecondMonth">Доступ к 180 программам</string>

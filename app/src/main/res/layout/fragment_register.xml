@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:id="@+id/register_container"
-    tools:context=".ui.dashboard.LoginFragment">
+    tools:context="com.ui.dashboard.LoginFragment">
 
     <ImageView
         android:id="@+id/RgNavigateBack"

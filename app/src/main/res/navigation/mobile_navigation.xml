@@ -7,17 +7,12 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.geeksfit.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" >
+        android:name="com.example.geeksfit.ui.gim.ui.GimFragment"
+        android:label="@string/title_gim"
+        tools:layout="@layout/fragment_gim" >
         <action
             android:id="@+id/action_navigation_home_to_navigation_dashboard"
-            app:destination="@id/navigation_dashboard" />
-    </fragment>
-        android:id="@+id/navigation_dash"
-        android:name="com.example.geeksfit.ui.pay.DashboardFragment"
-        android:label="@string/title_payments"
-        tools:layout="@layout/fragment_pay" />
+            app:destination="@id/navigation_gim" />
 
     <fragment
         android:id="@+id/navigation_gim"
@@ -39,14 +34,14 @@
         android:name="com.example.geeksfit.ui.gim.ui.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" />
-        tools:layout="@layout/fragment_profile" >
+
         <action
             android:id="@+id/action_navigation_profile_to_navigation_home"
             app:destination="@id/navigation_home" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.geeksfit.ui.dashboard.LoginFragment"
+        android:name="com.ui.dashboard.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -55,7 +50,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.example.geeksfit.ui.dashboard.RegisterFragment"
+        android:name="com.ui.dashboard.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" >
         <action
@@ -64,7 +59,7 @@
     </fragment>
     <fragment
         android:id="@+id/forgotPasswordFragment"
-        android:name="com.example.geeksfit.ui.dashboard.ForgotPasswordFragment"
+        android:name="com.ui.dashboard.ForgotPasswordFragment"
         android:label="fragment_forgot_password"
         tools:layout="@layout/fragment_forgot_password" >
         <action
@@ -73,11 +68,11 @@
     </fragment>
     <fragment
         android:id="@+id/verificationFragment"
-        android:name="com.example.geeksfit.ui.dashboard.VerificationFragment"
+        android:name="com.ui.dashboard.VerificationFragment"
         android:label="VerificationFragment" />
     <fragment
         android:id="@+id/newPasswordFragment"
-        android:name="com.example.geeksfit.ui.dashboard.NewPasswordFragment"
+        android:name="com.ui.dashboard.NewPasswordFragment"
         android:label="fragment_new_password"
         tools:layout="@layout/fragment_new_password" >
         <action
@@ -86,7 +81,7 @@
     </fragment>
     <fragment
         android:id="@+id/succesPasswordFragment"
-        android:name="com.example.geeksfit.ui.dashboard.SuccesPasswordFragment"
+        android:name="com.ui.dashboard.SuccesPasswordFragment"
         android:label="fragment_succes_password"
         tools:layout="@layout/fragment_succes_password" >
         <action
@@ -95,7 +90,7 @@
     </fragment>
     <fragment
         android:id="@+id/registrationFragment"
-        android:name="com.example.geeksfit.ui.dashboard.RegistrationFragment"
+        android:name="com.ui.dashboard.RegistrationFragment"
         android:label="fragment_registration"
         tools:layout="@layout/fragment_registration" >
         <action
