@@ -5,8 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import com.example.geeksfit.R
 import com.example.geeksfit.databinding.FragmentGimBinding
 import com.example.geeksfit.ui.gim.adapters.GimAdapter
 import com.example.geeksfit.ui.gim.model.GimModel
