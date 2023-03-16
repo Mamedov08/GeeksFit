@@ -29,6 +29,9 @@ class NewPasswordFragment : Fragment() {
         binding.btnReplace.setOnClickListener {
             findNavController().navigate(R.id.succesPasswordFragment)
         }
+        binding.RgNavigateBack.setOnClickListener {
+            findNavController().navigateUp()
+        }
     }
 
 }
