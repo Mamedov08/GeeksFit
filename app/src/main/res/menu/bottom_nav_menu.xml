@@ -12,7 +12,7 @@
         android:title="title_gim" />
 
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/profileFragment"
         android:title="@string/profile"
         android:icon="@drawable/ic_person"/>
 
