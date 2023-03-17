@@ -20,11 +20,10 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20px"
         android:layout_marginTop="126px"
-
         android:fontFamily="sans-serif-medium"
         android:textColor="@color/black"
         android:text="Одноразовый пароль"
-        android:textSize="24sp" />
+        android:textSize="28sp" />
     <TextView
         android:id="@+id/VfTextView2"
         android:maxLines="3"
@@ -129,7 +128,6 @@
             android:id="@+id/VfTextView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="72dp"
             android:text="Не получили код?"
             android:textColor="@color/black"
             android:textSize="12sp" />
@@ -138,9 +136,10 @@
             android:id="@+id/VfTextView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
+            android:layout_marginLeft="10dp"
             android:text="Отправить снова"
             android:textColor="@color/green"
             android:textSize="12sp" />
     </LinearLayout>
+
 </LinearLayout>

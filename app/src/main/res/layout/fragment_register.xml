@@ -21,13 +21,12 @@
         android:id="@+id/RgTextView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20px"
+        android:layout_marginLeft="32px"
         android:layout_marginTop="53px"
         android:layout_marginBottom="14sp"
         android:fontFamily="sans-serif-medium"
-        android:text="Добро пожаловать! Рады Вас видеть снова!"
+        android:text="Здравствуйте! Зарегистрируйтесь, чтобы продолжить!"
         android:textColor="@color/black"
-
         android:textSize="36sp" />
 
 

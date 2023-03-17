@@ -33,8 +33,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="16sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:orientation="vertical">
 
         <EditText
@@ -60,6 +60,7 @@
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="24dp"
             android:ems="10"
+            android:drawableEnd="@drawable/vector3"
             android:textColorHint="@color/grey"
             android:background="@drawable/round_back_primary"
             android:hint="Введите ваш пароль"
