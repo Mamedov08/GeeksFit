@@ -7,10 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.example.geeksfit.databinding.FragmentDetailBinding
+
 class DetailFragment : Fragment() {
 
     private lateinit var binding: FragmentDetailBinding
-  //  private val args by navArgs<DetailFragmentArgs>()
+    //  private val args by navArgs<DetailFragmentArgs>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,8 +24,8 @@ class DetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-    //    val model = args.model
+        //    val model = args.model
 
-    //    binding.title.text = model.title
+        //    binding.title.text = model.title
     }
 }

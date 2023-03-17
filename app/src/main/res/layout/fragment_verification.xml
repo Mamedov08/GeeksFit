@@ -20,19 +20,21 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20px"
         android:layout_marginTop="126px"
-
         android:fontFamily="sans-serif-medium"
         android:textColor="@color/black"
         android:text="Одноразовый пароль"
-        android:textSize="24sp" />
+        android:textSize="28sp" />
     <TextView
         android:id="@+id/VfTextView2"
-
+        android:maxLines="3"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="6dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/grey"
         android:text="Введите код подтверждения, который мы только что отправили на ваш адрес электронной почты."
-        android:textSize="16sp"/>
+        android:textSize="20sp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -112,6 +114,7 @@
             app:cornerRadius="30dp"
             android:textColor="@color/white"
             android:textStyle="bold" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -133,9 +136,10 @@
             android:id="@+id/VfTextView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
+            android:layout_marginLeft="10dp"
             android:text="Отправить снова"
             android:textColor="@color/green"
             android:textSize="12sp" />
     </LinearLayout>
+
 </LinearLayout>

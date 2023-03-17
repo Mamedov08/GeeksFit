@@ -4,9 +4,9 @@ import java.io.Serializable
 
 data class PayPal(
 
-    val image: Int?=null,
+    val image: Int? = null,
     val title: String,
 
-): Serializable
+    ) : Serializable
 
 

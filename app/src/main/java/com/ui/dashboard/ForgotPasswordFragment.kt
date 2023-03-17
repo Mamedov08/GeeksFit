@@ -9,8 +9,6 @@ import androidx.navigation.fragment.findNavController
 import com.example.geeksfit.R
 import com.example.geeksfit.databinding.FragmentForgotPasswordBinding
 
-
-@Suppress("UNREACHABLE_CODE")
 class ForgotPasswordFragment : Fragment() {
 
     private lateinit var binding: FragmentForgotPasswordBinding
@@ -32,6 +30,9 @@ class ForgotPasswordFragment : Fragment() {
     private fun onClick() {
         binding.fgTextview5.setOnClickListener {
             findNavController().navigate(R.id.verificationFragment)
+        }
+        binding.RgTextView4.setOnClickListener {
+            findNavController().navigate(R.id.loginFragment)
         }
         binding.RgTextView4.setOnClickListener {
             findNavController().navigate(R.id.loginFragment)

@@ -1,5 +1,6 @@
-package com.ui.dashboard
+package com.example.geeksfit.ui.dashboard
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -22,11 +23,13 @@ class LoginFragment : Fragment() {
         return binding.root
     }
 
+    @SuppressLint("ResourceType")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.lgbutton1.setOnClickListener {
             findNavController().navigate(R.id.loginFragment)
+
         }
         binding.lgtextView2.setOnClickListener {
             findNavController().navigate(R.id.forgotPasswordFragment)

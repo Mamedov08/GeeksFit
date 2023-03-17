@@ -3,9 +3,9 @@ package com.ui.gim.model
 import java.io.Serializable
 
 data class GimModel(
-    var  title: String,
+    var title: String,
 
-   val imageA: Int? = null,
+    val imageA: Int? = null,
     val titleA: String,
 
     val imageB: Int? = null,
@@ -20,5 +20,5 @@ data class GimModel(
     val imageE: Int? = null,
     val titleE: String
 
-  ): Serializable
+) : Serializable
 
