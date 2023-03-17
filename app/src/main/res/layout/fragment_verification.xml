@@ -27,12 +27,15 @@
         android:textSize="24sp" />
     <TextView
         android:id="@+id/VfTextView2"
-
+        android:maxLines="3"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="6dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/grey"
         android:text="Введите код подтверждения, который мы только что отправили на ваш адрес электронной почты."
-        android:textSize="16sp"/>
+        android:textSize="20sp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -112,6 +115,7 @@
             app:cornerRadius="30dp"
             android:textColor="@color/white"
             android:textStyle="bold" />
+
     </LinearLayout>
 
     <LinearLayout
