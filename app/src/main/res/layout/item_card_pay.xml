@@ -62,6 +62,147 @@
 
 
             <Button
+                android:id="@id/btn_cardF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/PayPal"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24sp"
+                android:textStyle="normal"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardVF"
+        android:layout_width="324dp"
+        android:layout_height="304dp"
+        tools:ignore="MissingConstraints"
+        app:background="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="32dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_gray"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCardF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                android:paddingStart="48dp"
+                android:text="@string/BayS"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvCardOnF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="16dp"
+                android:paddingStart="48dp"
+                android:text="@string/BayThi"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/tvCardOF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="16dp"
+                android:paddingStart="32dp"
+                android:text="@string/BaySe"
+                android:textSize="24sp"
+                android:layout_marginBottom="16dp"/>
+
+
+            <Button
+                android:id="@+id/bnt_cardS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/PayPal"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24sp"
+                android:textStyle="normal"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardVS"
+        android:layout_width="324dp"
+        android:layout_height="304dp"
+        tools:ignore="MissingConstraints"
+        app:background="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="32dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_gray"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCardS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                android:paddingStart="48dp"
+                android:text="@string/BayT"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvCardOnS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="16dp"
+                android:paddingStart="48dp"
+                android:text="@string/BayThi"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/tvCardOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="16dp"
+                android:paddingStart="32dp"
+                android:text="@string/BayTh"
+                android:textSize="20sp"
+                android:layout_marginBottom="16dp"/>
+
+
+            <Button
+                android:id="@+id/card_T"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button"

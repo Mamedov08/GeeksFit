@@ -36,8 +36,8 @@
 
     <TextView
         android:id="@+id/tv_payN"
-        android:layout_width="324dp"
-        android:layout_height="84dp"
+        android:layout_width="398dp"
+        android:layout_height="48dp"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@+id/tv_payName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,10 +47,9 @@
 
     <EditText
         android:id="@+id/tv_payName"
-        android:layout_width="328dp"
+        android:layout_width="388dp"
         android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
-        android:paddingStart="16dp"
         android:layout_marginTop="28dp"
         android:layout_marginStart="16dp"
         android:background="@drawable/button_one"
@@ -64,8 +63,8 @@
 
     <TextView
         android:id="@+id/tv_payNO"
-        android:layout_width="324dp"
-        android:layout_height="84dp"
+        android:layout_width="398dp"
+        android:layout_height="48dp"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@id/tv_payCard"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,7 +74,7 @@
 
     <EditText
         android:id="@+id/tv_payCard"
-        android:layout_width="328dp"
+        android:layout_width="388dp"
         android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
         android:paddingStart="16dp"
@@ -91,8 +90,8 @@
 
     <TextView
         android:id="@+id/tv_payNS"
-        android:layout_width="324dp"
-        android:layout_height="84dp"
+        android:layout_width="384dp"
+        android:layout_height="48dp"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@id/tv_payCardO"
         app:layout_constraintEnd_toEndOf="parent"
@@ -108,20 +107,21 @@
         android:padding="8dp"
         android:background="@drawable/button_one"
         android:hint="@string/CVC"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="78dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_payCard"
-        android:textSize="18sp"/>
+        android:textSize="24sp"/>
 
     <TextView
         android:id="@+id/tv_payNT"
-        android:layout_width="324dp"
-        android:layout_height="84dp"
+        android:layout_width="394dp"
+        android:layout_height="48dp"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@id/tv_payCardS"
         app:layout_constraintTop_toBottomOf="@+id/tv_payCard"
         android:text="@string/exp."
-        android:textSize="18sp"/>
+        android:textSize="24sp"/>
+
 
     <EditText
         android:id="@+id/tv_payCardS"
@@ -129,11 +129,12 @@
         android:layout_height="42dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/button_one"
+        android:layout_marginStart="@dimen/page_32dp"
         android:hint="@string/exp."
-        android:layout_marginEnd="42dp"
+        android:layout_marginEnd="78dp"
+        android:textSize="@dimen/page_24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_payCard"
-        android:textSize="18sp"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_payCard"/>
 
 
     <androidx.recyclerview.widget.RecyclerView

@@ -46,30 +46,32 @@
         android:id="@+id/verificationFragment"
         android:name="com.example.geeksfit.ui.dashboard.VerificationFragment"
         android:label="VerificationFragment" />
-
-
+    <fragment
+        android:id="@+id/newPasswordFragment"
+        android:name="com.example.geeksfit.ui.dashboard.NewPasswordFragment"
+        android:label="fragment_new_password"
+        tools:layout="@layout/fragment_new_password" >
+        <action
+            android:id="@+id/action_newPasswordFragment_to_succesPasswordFragment"
+            app:destination="@id/succesPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/succesPasswordFragment"
+        android:name="com.example.geeksfit.ui.dashboard.SuccesPasswordFragment"
+        android:label="fragment_succes_password"
+        tools:layout="@layout/fragment_succes_password" >
+        <action
+            android:id="@+id/action_succesPasswordFragment_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
     <fragment
         android:id="@+id/registrationFragment"
-        android:name="com.example.geeksfit.ui.dashboard.RegistrationFragment"
+        android:name="com.ui.dashboard.RegistrationFragment"
         android:label="fragment_registration"
         tools:layout="@layout/fragment_registration" >
         <action
             android:id="@+id/action_registrationFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/succesPasswordFragment"
-        android:name="com.example.geeksfit.ui.dashboard.SuccesPasswordFragment"
-        android:label="SuccesPasswordFragment" />
-    <fragment
-        android:id="@+id/newPasswordFragment"
-        android:name="com.example.geeksfit.ui.dashboard.NewPasswordFragment"
-        android:label="NewPasswordFragment" />
-    <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.example.geeksfit.ui.profile.ProfileFragment"
-        android:label="ProfileFragment"
-        tools:layout="@layout/fragment_profile"/>
-
 
 </navigation>
