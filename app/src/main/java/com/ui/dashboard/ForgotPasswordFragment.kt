@@ -9,7 +9,6 @@ import androidx.navigation.fragment.findNavController
 import com.example.geeksfit.R
 import com.example.geeksfit.databinding.FragmentForgotPasswordBinding
 
-@Suppress("UNREACHABLE_CODE")
 class ForgotPasswordFragment : Fragment() {
 
     private lateinit var binding: FragmentForgotPasswordBinding

@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.geeksfit.databinding.FragmentVerificationBinding
 
-@Suppress("UNREACHABLE_CODE")
 class VerificationFragment : Fragment() {
     private lateinit var binding: FragmentVerificationBinding
 
