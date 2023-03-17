@@ -6,8 +6,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:id="@+id/register_container"
+<<<<<<< HEAD
     android:paddingStart="10dp"
     android:paddingEnd="10dp"
+=======
+    tools:context="com.ui.dashboard.LoginFragment">
+    android:padding="10dp"
+>>>>>>> 7a2967051c2f842b6f75ff59be21e071260d3b43
     tools:context=".ui.dashboard.LoginFragment">
 
     <ImageView

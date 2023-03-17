@@ -12,7 +12,7 @@
         android:title="@string/gim" />
 
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/profileFragment"
         android:icon="@drawable/ic_person"
         android:title="Profile"
         android:iconTint="@android:color/holo_green_light"/>
