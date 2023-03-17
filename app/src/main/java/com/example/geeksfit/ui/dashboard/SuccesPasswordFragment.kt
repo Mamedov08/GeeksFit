@@ -4,12 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.geeksfit.R
 import com.example.geeksfit.databinding.FragmentSuccesPasswordBinding
-import com.google.android.material.button.MaterialButton
 
  class SuccessPasswordFragment : Fragment() {
 
@@ -24,19 +22,15 @@ import com.google.android.material.button.MaterialButton
         _binding = FragmentSuccesPasswordBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        val changePasswordTextView: TextView = binding.scTextView
-        val successTextView: TextView = binding.scTextView2
-        val enterPasswordButton: MaterialButton = binding.scButton
-
-        enterPasswordButton.setOnClickListener {
+        binding.scButton.setOnClickListener {
         findNavController().navigate(R.id.succesPasswordFragment)
         }
 
-        changePasswordTextView.setOnClickListener {
+        binding.scTextView2.setOnClickListener {
             findNavController().navigate(R.id.succesPasswordFragment)
         }
 
-        successTextView.setOnClickListener {
+        binding.scTextView.setOnClickListener {
             findNavController().navigate(R.id.succesPasswordFragment)
         }
 
