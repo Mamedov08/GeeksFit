@@ -125,6 +125,7 @@
             android:id="@+id/VfTextView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
             android:text="Не получили код?"
             android:textColor="@color/black"
             android:textSize="12sp" />
