@@ -1,15 +1,17 @@
+package com.example.geeksfit.ui.dashboard
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.geeksfit.R
 import com.example.geeksfit.databinding.FragmentSuccesPasswordBinding
-import com.example.geeksfit.ui.gim.ui.GimFragment
 import com.google.android.material.button.MaterialButton
 
-class SuccessPasswordFragment : Fragment() {
+ class SuccessPasswordFragment : Fragment() {
 
     private var _binding: FragmentSuccesPasswordBinding? = null
     private val binding get() = _binding!!
@@ -27,17 +29,17 @@ class SuccessPasswordFragment : Fragment() {
         val enterPasswordButton: MaterialButton = binding.scButton
 
         enterPasswordButton.setOnClickListener {
-            val gimFragment : GimFragment()
-            requireActivity().supportFragmentManager.beginTransaction()
-                .replace(R.id.GimFragment, gimFragment)
-                .commit()
+        findNavController().navigate(R.id.succesPasswordFragment)
+        }
+
+        changePasswordTextView.setOnClickListener {
+            findNavController().navigate(R.id.succesPasswordFragment)
+        }
+
+        successTextView.setOnClickListener {
+            findNavController().navigate(R.id.succesPasswordFragment)
         }
 
         return view
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 }
