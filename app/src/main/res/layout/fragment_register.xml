@@ -7,10 +7,12 @@
     android:orientation="vertical"
     android:id="@+id/register_container"
     tools:context="com.ui.dashboard.LoginFragment">
+    android:padding="10dp"
+    tools:context=".ui.dashboard.LoginFragment">
 
     <ImageView
         android:id="@+id/RgNavigateBack"
-        android:layout_width="19dp"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="14dp"
         android:layout_marginLeft="14dp"
@@ -51,7 +53,7 @@
             android:textColorHint="@color/grey"
             android:inputType="textPersonName"
             android:textColor="@color/grey"/>
-   <EditText
+        <EditText
 
             android:paddingStart="16dp"
             android:layout_marginEnd="24dp"
@@ -60,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="4dp"
-           android:background="@drawable/round_back_primary"
+            android:background="@drawable/round_back_primary"
             android:hint="Введите e-mai"
             android:textColorHint="@color/grey"
             android:inputType="textPersonName"

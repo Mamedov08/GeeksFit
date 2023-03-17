@@ -68,4 +68,11 @@
     <string name="card">№ карты</string>
     <string name="CVC">CVC</string>
     <string name="exp.">exp.</string>
+    <string name="pay">pay</string>
+    <string name="gim">gim</string>
+
+    <string name="data">Данные</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="exit">ВЫЙТИ ИЗ АККАУНТА</string>
+    <string name="add_photo">Сделать снимок</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.ui.gim.ui
+package com.ui.gim.frag
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -28,7 +28,7 @@ class GimFragment : Fragment() {
         binding.rView.adapter = adapter
 
         binding.rView.setOnClickListener {
-            findNavController().navigate(R.id.detailFragment)
+            findNavController().navigate(R.layout.fragment_detail)
         }
     }
 }

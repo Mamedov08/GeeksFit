@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context="com.ui.dashboard.LoginFragment">
+    android:padding="10dp"
+    tools:context=".ui.dashboard.LoginFragment">
 
     <ImageView
         android:id="@+id/RgNavigateBack"

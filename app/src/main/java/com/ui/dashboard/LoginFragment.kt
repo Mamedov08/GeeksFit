@@ -1,13 +1,14 @@
 package com.ui.dashboard
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.geeksfit.R
 import com.example.geeksfit.databinding.FragmentLoginBinding
+
 class LoginFragment : Fragment() {
 
     private lateinit var binding: FragmentLoginBinding
@@ -26,19 +27,15 @@ class LoginFragment : Fragment() {
 
         binding.lgbutton1.setOnClickListener {
             findNavController().navigate(R.id.loginFragment)
-
-
         }
-        binding.LgTextView5.setOnClickListener {
-            findNavController().navigate(R.id.registerFragment)
-        }
-
         binding.lgtextView2.setOnClickListener {
             findNavController().navigate(R.id.forgotPasswordFragment)
         }
         binding.LgTextView5.setOnClickListener {
             findNavController().navigate(R.id.registerFragment)
         }
-
-}
+        binding.RgNavigateBack.setOnClickListener {
+            findNavController().navigateUp()
+        }
+    }
 }
