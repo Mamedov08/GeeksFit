@@ -124,8 +124,6 @@
 
     </TextView>
 
-    London, [16.03.2023 10:14]
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

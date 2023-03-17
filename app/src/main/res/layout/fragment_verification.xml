@@ -135,8 +135,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:text="Отправить снова"
-            android:layout_marginLeft="10dp"
-            android:text="Отправить снова"
             android:textColor="@color/green"
             android:textSize="12sp" />
     </LinearLayout>

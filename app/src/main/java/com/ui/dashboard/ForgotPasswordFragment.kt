@@ -10,8 +10,6 @@ import com.example.geeksfit.R
 import com.example.geeksfit.databinding.FragmentForgotPasswordBinding
 
 @Suppress("UNREACHABLE_CODE")
-
-@Suppress("UNREACHABLE_CODE")
 class ForgotPasswordFragment : Fragment() {
 
     private lateinit var binding: FragmentForgotPasswordBinding
@@ -25,11 +23,6 @@ class ForgotPasswordFragment : Fragment() {
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        onClick()
-    }
-    private fun onClick(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         onClick()
