@@ -1,7 +1,6 @@
 package com.example.geeksfit
 
 
-
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
@@ -28,7 +27,6 @@ class SplashActivity : AppCompatActivity() {
         transparentAppBar()
         setupPS()
         setupAnim()
-
 
     }
 

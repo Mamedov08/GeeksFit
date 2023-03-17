@@ -15,7 +15,10 @@ class GimAdapter(
 ) :
     RecyclerView.Adapter<GimAdapter.GimViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): _root_ide_package_.com.ui.gim.adapters.GimAdapter.GimViewHolder {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int
+    ): _root_ide_package_.com.ui.gim.adapters.GimAdapter.GimViewHolder {
         return GimViewHolder(
             ItemGimBinding.inflate(
                 LayoutInflater.from(parent.context),
@@ -23,7 +26,11 @@ class GimAdapter(
             )
         )
     }
-    override fun onBindViewHolder(holder: _root_ide_package_.com.ui.gim.adapters.GimAdapter.GimViewHolder, position: Int) {
+
+    override fun onBindViewHolder(
+        holder: _root_ide_package_.com.ui.gim.adapters.GimAdapter.GimViewHolder,
+        position: Int
+    ) {
         holder.bind(data[position])
     }
 
@@ -32,7 +39,7 @@ class GimAdapter(
     inner class GimViewHolder(private val binding: ItemGimBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(gimModel: GimModel) {
-            binding.titleTV.text=gimModel.title
+            binding.titleTV.text = gimModel.title
             gimModel.imageA?.let { binding.fitImageA.setImageResource(it) }
             gimModel.imageB?.let { binding.fitImageB.setImageResource(it) }
             binding.playlistTvB.text = gimModel.titleB

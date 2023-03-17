@@ -7,7 +7,7 @@ import com.example.geeksfit.databinding.ItemCardPayBinding
 import com.ui.pay.model.PayCard
 
 
-class CardPayAdapter (
+class CardPayAdapter(
 
     private val array: ArrayList<PayCard>
 ) :
@@ -19,7 +19,13 @@ class CardPayAdapter (
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardPayViewHolder {
-        return CardPayViewHolder(ItemCardPayBinding.inflate(LayoutInflater.from(parent.context),parent,false))
+        return CardPayViewHolder(
+            ItemCardPayBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
+        )
     }
 
     override fun getItemCount(): Int = array.size

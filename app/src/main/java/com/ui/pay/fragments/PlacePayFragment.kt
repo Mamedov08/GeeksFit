@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import com.example.geeksfit.R
 import com.example.geeksfit.databinding.FragmentPlacePayBinding
 import com.ui.pay.adapters.PlacePayAdapter
+import com.ui.pay.model.Pay
 import com.ui.pay.model.PayPal
 
 class PlacePayFragment : Fragment() {
@@ -45,14 +46,14 @@ class PlacePayFragment : Fragment() {
 
         binding.rcView.adapter = adapter
     }
-<<<<<<< HEAD:app/src/main/java/com/example/geeksfit/ui/pay/fragments/PlacePayFragment.kt
 
     private fun onClickItem(model: Pay) {
-=======
-    private fun onClickItem(model: PayPal) {
->>>>>>> 7a2967051c2f842b6f75ff59be21e071260d3b43:app/src/main/java/com/ui/pay/fragments/PlacePayFragment.kt
 
     }
+        private fun onClickItem(model: PayPal) {
+
+        }
 }
+
 
 

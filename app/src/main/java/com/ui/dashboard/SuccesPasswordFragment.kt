@@ -9,7 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.geeksfit.R
 import com.example.geeksfit.databinding.FragmentSuccesPasswordBinding
 
- class SuccessPasswordFragment : Fragment() {
+class SuccessPasswordFragment : Fragment() {
 
     private var _binding: FragmentSuccesPasswordBinding? = null
     private val binding get() = _binding!!
@@ -23,7 +23,7 @@ import com.example.geeksfit.databinding.FragmentSuccesPasswordBinding
         val view = binding.root
 
         binding.scButton.setOnClickListener {
-        findNavController().navigate(R.id.succesPasswordFragment)
+            findNavController().navigate(R.id.succesPasswordFragment)
         }
 
         binding.scTextView2.setOnClickListener {

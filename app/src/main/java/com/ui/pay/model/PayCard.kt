@@ -1,10 +1,10 @@
 package com.ui.pay.model
 
-class PayCard (
+class PayCard(
 
     val title: String
 
-    )
+)
 
 
 

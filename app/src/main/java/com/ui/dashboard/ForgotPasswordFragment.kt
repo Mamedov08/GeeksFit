@@ -32,7 +32,7 @@ class ForgotPasswordFragment : Fragment() {
         binding.fgTextview5.setOnClickListener {
             findNavController().navigate(R.id.verificationFragment)
         }
-        binding.RgTextView4.setOnClickListener{
+        binding.RgTextView4.setOnClickListener {
             findNavController().navigate(R.id.loginFragment)
         }
         binding.RgTextView4.setOnClickListener {
