@@ -11,37 +11,40 @@ import com.example.geeksfit.ui.pay.model.PayCard
 
 class PayCardFragment : Fragment() {
 
-     private lateinit var binding: FragmentCardPayBinding
+    private lateinit var binding: FragmentCardPayBinding
 
 
-        override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
-        ): View {
-            binding = FragmentCardPayBinding.inflate(layoutInflater, container, false)
-            // Inflate the layout for this fragment
-            return binding.root
-        }
-        override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-            super.onViewCreated(view, savedInstanceState)
-            initAdapter()
-        }
-
-        private fun initAdapter() {
-            loadData()
-        }
-        private fun loadData() {
-            val list = ArrayList<PayCard>()
-            list.apply {
-
-                add(PayCard( "accessMonth"))
-            }
-
-
-        }
-        private fun onClickItem(model: PayCard) {
-
-        }
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        binding = FragmentCardPayBinding.inflate(layoutInflater, container, false)
+        // Inflate the layout for this fragment
+        return binding.root
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initAdapter()
+    }
+
+    private fun initAdapter() {
+        loadData()
+    }
+
+    private fun loadData() {
+        val list = ArrayList<PayCard>()
+        list.apply {
+
+            add(PayCard("accessMonth"))
+        }
+
+
+    }
+
+    private fun onClickItem(model: PayCard) {
+
+    }
+}
 
 

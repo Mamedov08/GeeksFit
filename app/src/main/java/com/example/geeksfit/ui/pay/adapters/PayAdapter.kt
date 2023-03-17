@@ -7,12 +7,11 @@ import com.example.geeksfit.databinding.ItemPayBinding
 import com.example.geeksfit.ui.pay.model.Pay
 
 
-
-class PayAdapter (
+class PayAdapter(
 
     private val data: ArrayList<Pay>,
     private val onClick: (model: Pay) -> Unit
-    ) :
+) :
     RecyclerView.Adapter<PayAdapter.PayViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PayViewHolder {

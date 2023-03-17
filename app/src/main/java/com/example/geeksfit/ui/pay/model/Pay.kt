@@ -8,7 +8,7 @@ data class Pay(
     val title: String,
     val desc: String
 
-    ): Serializable
+) : Serializable
 
 
 

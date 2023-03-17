@@ -17,8 +17,7 @@ class GimFragment : Fragment() {
     private lateinit var adapter: GimAdapter
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
         binding = FragmentGimBinding.inflate(layoutInflater, container, false)
         // Inflate the layout for this fragment

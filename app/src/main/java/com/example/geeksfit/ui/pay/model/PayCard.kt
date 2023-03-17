@@ -1,6 +1,6 @@
 package com.example.geeksfit.ui.pay.model
 
-class PayCard (
+class PayCard(
 
     val title: String,
 

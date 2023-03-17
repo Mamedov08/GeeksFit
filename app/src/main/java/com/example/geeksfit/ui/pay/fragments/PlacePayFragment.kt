@@ -12,7 +12,6 @@ import com.example.geeksfit.ui.pay.model.Pay
 import com.example.geeksfit.ui.pay.model.PayPal
 
 
-
 class PlacePayFragment : Fragment() {
     private lateinit var binding: FragmentPlacePayBinding
 
@@ -38,6 +37,7 @@ class PlacePayFragment : Fragment() {
     private fun initAdapter() {
         loadData()
     }
+
     private fun loadData() {
         val list = ArrayList<PayPal>()
         list.apply {
@@ -45,8 +45,9 @@ class PlacePayFragment : Fragment() {
             add(PayPal(R.drawable.image, "@string/BayO"))
         }
 
-               binding.rcView.adapter = adapter
+        binding.rcView.adapter = adapter
     }
+
     private fun onClickItem(model: Pay) {
 
     }

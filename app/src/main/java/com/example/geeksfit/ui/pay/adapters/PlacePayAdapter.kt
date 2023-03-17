@@ -7,34 +7,35 @@ import com.example.geeksfit.databinding.ItemPlacePayBinding
 import com.example.geeksfit.ui.pay.model.PayPal
 
 
-class PlacePayAdapter (
+class PlacePayAdapter(
     private val array: ArrayList<PayPal>,
     private val onClick: (model: PayPal) -> Unit
-    ) :
+) :
     RecyclerView.Adapter<PlacePayAdapter.PlacePayViewHolder>() {
 
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlacePayViewHolder {
-            return PlacePayViewHolder(
-                ItemPlacePayBinding.inflate(
-                    LayoutInflater.from(parent.context),
-                    parent, false
-                )
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlacePayViewHolder {
+        return PlacePayViewHolder(
+            ItemPlacePayBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent, false
             )
-        }
-        override fun onBindViewHolder(holder: PlacePayViewHolder, position: Int) {
-            holder.bind(array[position])
-        }
+        )
+    }
 
-        override fun getItemCount(): Int = array.size
+    override fun onBindViewHolder(holder: PlacePayViewHolder, position: Int) {
+        holder.bind(array[position])
+    }
 
-        inner class PlacePayViewHolder(private val binding: ItemPlacePayBinding) :
-            RecyclerView.ViewHolder(binding.root) {
-            fun bind(placepay: PayPal) {
-                placepay.image?.let { binding.imageCardP.setImageResource(it) }
-                binding.btnCardP.text = placepay.title
+    override fun getItemCount(): Int = array.size
 
-                itemView.setOnClickListener {
-                    onClick(placepay)
+    inner class PlacePayViewHolder(private val binding: ItemPlacePayBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+        fun bind(placepay: PayPal) {
+            placepay.image?.let { binding.imageCardP.setImageResource(it) }
+            binding.btnCardP.text = placepay.title
+
+            itemView.setOnClickListener {
+                onClick(placepay)
 
             }
         }

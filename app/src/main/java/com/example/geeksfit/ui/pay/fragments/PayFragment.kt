@@ -10,7 +10,6 @@ import com.example.geeksfit.ui.pay.adapters.PayAdapter
 import com.example.geeksfit.ui.pay.model.Pay
 
 
-
 class PayFragment : Fragment() {
 
     private lateinit var binding: FragmentPayBinding
@@ -24,6 +23,7 @@ class PayFragment : Fragment() {
         // Inflate the layout for this fragment
         return binding.root
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initAdapter()
@@ -32,6 +32,7 @@ class PayFragment : Fragment() {
     private fun initAdapter() {
         loadData()
     }
+
     private fun loadData() {
         val list = ArrayList<Pay>()
         list.apply {
@@ -42,6 +43,7 @@ class PayFragment : Fragment() {
         adapter = PayAdapter(list, this::onClickItem)
         binding.onRV.adapter = adapter
     }
+
     private fun onClickItem(model: Pay) {
 
     }
