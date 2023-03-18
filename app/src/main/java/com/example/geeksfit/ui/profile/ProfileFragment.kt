@@ -20,21 +20,26 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.FileProvider
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
+import coil.load
 import com.example.geeksfit.BuildConfig
 
 
 import com.example.geeksfit.R
+import com.example.geeksfit.data.local.Pref
 import com.example.geeksfit.databinding.FragmentProfileBinding
-import com.example.geeksfit.ui.loadImage
-import com.example.geeksfit.ui.showConfirmationDialog
 import com.example.geeksfit.ui.showToast
+import dagger.hilt.android.AndroidEntryPoint
 
 import java.io.File
+import javax.inject.Inject
 
-
+@AndroidEntryPoint
 class ProfileFragment : Fragment() {
-
+    @Inject  lateinit var pref: Pref
+    private val vm : ProfileViewModel by viewModels()
     lateinit var binding: FragmentProfileBinding
 
     private lateinit var takePicture: ActivityResultLauncher<Uri>
@@ -56,17 +61,31 @@ class ProfileFragment : Fragment() {
 
         initClicker()
         registerPictures()
+        getPersonData()
+
     }
+
+    private fun getPersonData() {
+        vm.getPersonalInform().observe(viewLifecycleOwner){
+            binding.tvName.text = it.properties.name.toString()
+            binding.phoneNumber.text = it.properties.phone.toString()
+            binding.gender.text = it.properties.gender.type
+        }
+    }
+
     private fun registerPictures() {
 
         takePicture =
             registerForActivityResult(ActivityResultContracts.TakePicture()) { isSuccess ->
                 if (isSuccess) {
                     imageUri.let { uri ->
-                        binding.myImage.loadImage(uri.toString())
+                        pref.saveImage(uri.toString())
+                        binding.myImage.load(uri.toString())
+
                     }
                 }
             }
+
     }
 
     private fun takeImage() {
@@ -94,6 +113,10 @@ class ProfileFragment : Fragment() {
 
 
     private fun initClicker() {
+        binding.tvMyCard.setOnClickListener {
+            findNavController().navigate(R.id.myCards)
+        }
+
         binding.tvChangeBmi.setOnClickListener {
             setupDialogBmi()
         }
@@ -132,9 +155,11 @@ class ProfileFragment : Fragment() {
         val dismiss = dialogBinding.findViewById<TextView>(R.id.tv_dismiss)
 
         image.setOnClickListener {
+
             galleryActivityLauncher.launch(arrayOf("image/*"))
             myDialog.dismiss()
         }
+        binding.myImage.load(pref.getImage())
 
         addPhoto.setOnClickListener {
             takeImage()
@@ -236,7 +261,9 @@ class ProfileFragment : Fragment() {
             ActivityResultContracts.OpenDocument()
         ) { result ->
             if (result != null) {
-                binding.myImage.loadImage(result.toString())
+                binding.myImage.load(result.toString())
+                pref.saveImage(result.toString())
+
             } else {
                 Log.d("lol", "onActivityResult: the result is null for some reason")
             }

@@ -2,9 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_payments"
-        android:icon="@drawable/baseline_payments"
-        android:title="title_payments" />
+        android:id="@+id/payFragment"
+        android:title="Pay"
+        android:icon="@drawable/ic_pay"/>
 
     <item
         android:id="@+id/navigation_gim"
@@ -15,5 +15,6 @@
         android:id="@+id/profileFragment"
         android:title="@string/profile"
         android:icon="@drawable/ic_person"/>
+
 
 </menu>

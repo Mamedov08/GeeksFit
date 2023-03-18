@@ -1,13 +1,15 @@
 package com.example.geeksfit.ui.profile
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.geeksfit.data.remote.model.personalinform.PersonalInform
+import com.example.geeksfit.repository.Repository
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class ProfileViewModel : ViewModel() {
-
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+@HiltViewModel
+class ProfileViewModel @Inject constructor(private val repository: Repository) : ViewModel() {
+    fun getPersonalInform():LiveData<PersonalInform>{
+        return repository.getPersonalInform()
     }
-    val text: LiveData<String> = _text
 }

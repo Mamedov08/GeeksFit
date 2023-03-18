@@ -1,6 +1,13 @@
 package com.example.geeksfit.data.remote
 
 import com.example.geeksfit.data.remote.model.*
+import com.example.geeksfit.data.remote.model.card.CardBody
+import com.example.geeksfit.data.remote.model.card.MyCard
+import com.example.geeksfit.data.remote.model.fovoritetraining.FavoriteTraining
+import com.example.geeksfit.data.remote.model.fovoritetraining.Training
+import com.example.geeksfit.data.remote.model.login.RegistrationBody
+import com.example.geeksfit.data.remote.model.personalinform.PersonalInform
+import retrofit2.Call
 import retrofit2.Response
 import retrofit2.http.*
 
@@ -24,28 +31,6 @@ interface ApiService {
         @Query("page") page: Int
     ): Response<Training>
 
-    @GET("/personal_area/my_card/")
-    fun getMyCard(): Response<MyCard>
-
-    @POST("/personal_area/my_card/")
-    fun postMyCard(
-        @Body myCard: MyCard
-    ): Response<MyCard>
-
-    @GET("/personal_area/my_card/{id}/")
-    fun getMyCardId(
-        @Path("id") id: Int
-    ): Response<MyCard>
-
-    @PUT("/personal_area/my_card/{id}/")
-    fun putMyCardId(
-        @Body myCard: MyCard
-    ): Response<MyCard>
-
-    @PATCH("/personal_area/my_card/{id}/")
-    fun patchMyCardId(
-        @Body myCard: MyCard
-    ): Response<MyCard>
 
     @GET("/personal_area/personal_inform_edit/{id}/")
     fun getPersonalInform(): Response<PersonalInform>
@@ -61,7 +46,7 @@ interface ApiService {
     ): Response<PersonalInform>
 
     @GET("/personal_area/personal_inform_view/")
-    fun getPersonalInformView(): Response<PersonalInform>
+    fun getPersonalInformView(): Call<PersonalInform>
 
     @POST("/personal_area/personal_inform_view/")
     fun postPersonalInformView(
@@ -83,21 +68,7 @@ interface ApiService {
         @Body personal: PersonalInform
     ): Response<PersonalInform>
 
-    @GET("users/login/")
-    fun getLogin(): Response<Login>
 
-    @POST("users/login/")
-    fun postLogin(
-        @Body login: Login
-    ): Response<Login>
-
-    @GET("users/register/")
-    fun getRegister(): Response<Register>
-
-    @POST("users/register/")
-    fun postRegister(
-        @Body register: Register
-    ): Response<Register>
 
 
 }

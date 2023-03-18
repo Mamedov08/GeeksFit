@@ -10,9 +10,10 @@ import com.example.geeksfit.databinding.FragmentPlacePayBinding
 import com.example.geeksfit.ui.pay.adapters.PlacePayAdapter
 import com.example.geeksfit.ui.pay.model.Pay
 import com.example.geeksfit.ui.pay.model.PayPal
+import dagger.hilt.android.AndroidEntryPoint
 
 
-
+@AndroidEntryPoint
 class PlacePayFragment : Fragment() {
     private lateinit var binding: FragmentPlacePayBinding
 

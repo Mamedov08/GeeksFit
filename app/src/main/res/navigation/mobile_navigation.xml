@@ -6,7 +6,7 @@
     app:startDestination="@+id/registrationFragment">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_gim"
         android:name="com.example.geeksfit.ui.gim.ui.GimFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_gim" >
@@ -70,6 +70,31 @@
         android:name="com.example.geeksfit.ui.profile.ProfileFragment"
         android:label="ProfileFragment"
         tools:layout="@layout/fragment_profile"/>
+    <fragment
+        android:id="@+id/payCardFragment"
+        android:name="com.example.geeksfit.ui.pay.fragments.PayCardFragment"
+        android:label="PayCardFragment"
+        tools:layout="@layout/fragment_card_pay"/>
+    <fragment
+        android:id="@+id/payFragment"
+        android:name="com.example.geeksfit.ui.pay.fragments.PayFragment"
+        android:label="PayFragment"
+        tools:layout="@layout/fragment_pay"/>
+    <fragment
+        android:id="@+id/placePayFragment"
+        android:name="com.example.geeksfit.ui.pay.fragments.PlacePayFragment"
+        android:label="PlacePayFragment"
+        tools:layout="@layout/fragment_place_pay"/>
+    <fragment
+        android:id="@+id/addCard"
+        android:name="com.example.geeksfit.ui.profile.addcardfragment.AddCard"
+        android:label="fragment_add_card"
+        tools:layout="@layout/fragment_add_card" />
+    <fragment
+        android:id="@+id/myCards"
+        android:name="com.example.geeksfit.ui.profile.mycardfragment.MyCards"
+        android:label="fragment_my_cards"
+        tools:layout="@layout/fragment_my_cards" />
 
 
 </navigation>

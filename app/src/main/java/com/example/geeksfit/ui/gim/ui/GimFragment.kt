@@ -8,8 +8,9 @@ import androidx.fragment.app.Fragment
 import com.example.geeksfit.databinding.FragmentGimBinding
 import com.example.geeksfit.ui.gim.adapters.GimAdapter
 import com.example.geeksfit.ui.gim.model.GimModel
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class GimFragment : Fragment() {
     private lateinit var binding: FragmentGimBinding
     private lateinit var adapter: GimAdapter

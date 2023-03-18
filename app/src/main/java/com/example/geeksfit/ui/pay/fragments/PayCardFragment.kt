@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import com.example.geeksfit.databinding.FragmentCardPayBinding
 import com.example.geeksfit.databinding.FragmentPayBinding
 import com.example.geeksfit.ui.pay.model.PayCard
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class PayCardFragment : Fragment() {
 
      private lateinit var binding: FragmentCardPayBinding

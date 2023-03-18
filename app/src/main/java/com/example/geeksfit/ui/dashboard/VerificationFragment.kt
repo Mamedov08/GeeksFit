@@ -7,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.geeksfit.databinding.FragmentVerificationBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 @Suppress("UNREACHABLE_CODE")
 class VerificationFragment : Fragment() {
     private lateinit var binding: FragmentVerificationBinding
