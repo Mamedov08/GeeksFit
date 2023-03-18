@@ -48,7 +48,6 @@ object ApiModule {
                 .client(getOkhttp())
             .addConverterFactory(GsonConverterFactory.create()).build()
     }
-
     @Provides
     fun provideApi(): ApiService {
         return createRetrofit()
