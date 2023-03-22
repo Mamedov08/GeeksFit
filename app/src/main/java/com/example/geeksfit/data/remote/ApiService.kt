@@ -82,20 +82,6 @@ interface ApiService {
         @Body personal: PersonalInform
     ): retrofit2.Response<PersonalInform>
 
-    @GET("users/login/")
-    fun getLogin(): retrofit2.Response<Login>
 
-    @POST("users/login/")
-    fun postLogin(
-        @Body login: Login
-    ): retrofit2.Response<Login>
-
-    @GET("users/register/")
-    fun getRegister(): retrofit2.Response<Register>
-
-    @POST("users/register/")
-    fun postRegister(
-        @Body register: Register
-    ): retrofit2.Response<Register>
 
 }
