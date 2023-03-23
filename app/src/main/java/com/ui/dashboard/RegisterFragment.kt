@@ -11,6 +11,7 @@ import com.example.geeksfit.R
 import com.example.geeksfit.data.remote.model.login.LoginBody
 import com.example.geeksfit.data.remote.model.login.RegistrationBody
 import com.example.geeksfit.databinding.FragmentRegisterBinding
+import com.example.geeksfit.ui.dashboard.RegistrationViewModel
 import com.example.geeksfit.ui.showToast
 import dagger.hilt.android.AndroidEntryPoint
 

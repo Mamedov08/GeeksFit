@@ -69,7 +69,7 @@ interface ApiService {
 
     @GET("/personal_area/personal_inform_view/")
     fun getPersonalInformView(): Call<PersonalInform>
-    fun getPersonalInformView(): retrofit2.Response<PersonalInform>
+
 
     @POST("/personal_area/personal_inform_view/")
     fun postPersonalInformView(
@@ -90,10 +90,6 @@ interface ApiService {
     fun patchUser(
         @Body personal: PersonalInform
     ): retrofit2.Response<PersonalInform>
-
-    ): Response<PersonalInform>
-
-
 
 
 }

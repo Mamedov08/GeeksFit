@@ -16,10 +16,8 @@ class VerificationFragment : Fragment() {
 
     private lateinit var binding: FragmentVerificationBinding
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?,
-        binding = FragmentVerificationBinding.inflate(layoutInflater)
+    fun onCreateView(
+        binding: FragmentVerificationBinding = FragmentVerificationBinding.inflate(layoutInflater)
     ): View? {
         // Inflate the layout for this fragment
         return binding.root
