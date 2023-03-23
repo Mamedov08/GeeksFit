@@ -26,8 +26,6 @@
 
 Target **Android API** ``` 33 ```
 
-**Phone** default preview size ``` 411 × 891 dp, xxhdpi ```
-
 ## RULES
 
 - Single activity
