@@ -6,11 +6,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.geeksfit.R
+import com.example.geeksfit.data.remote.model.login.RegistrationBody
 import com.example.geeksfit.databinding.FragmentLoginBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class LoginFragment : Fragment() {
+
+
 
     private lateinit var binding: FragmentLoginBinding
 
@@ -27,6 +33,13 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        initClicker()
+
+    }
+
+
+
+    private fun initClicker() {
         binding.lgbutton1.setOnClickListener {
             findNavController().navigate(R.id.loginFragment)
 

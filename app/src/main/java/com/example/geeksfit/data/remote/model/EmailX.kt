@@ -7,5 +7,5 @@ data class EmailX(
     val minLength: Int,
     val title: String,
     val type: String,
-    val x-nullable: Boolean
+
 )

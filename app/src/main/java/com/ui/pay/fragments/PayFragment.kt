@@ -1,4 +1,4 @@
-package com.ui.pay.fragments
+package com.example.geeksfit.ui.pay.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,7 +8,10 @@ import android.view.ViewGroup
 import com.example.geeksfit.databinding.FragmentPayBinding
 import com.ui.pay.adapters.PayAdapter
 import com.ui.pay.model.Pay
+import dagger.hilt.android.AndroidEntryPoint
 
+
+@AndroidEntryPoint
 class PayFragment : Fragment() {
 
     private lateinit var binding: FragmentPayBinding
