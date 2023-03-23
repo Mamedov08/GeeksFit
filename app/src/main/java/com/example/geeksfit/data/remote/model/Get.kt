@@ -4,6 +4,5 @@ data class Get(
     val description: String,
     val operationId: String,
     val parameters: List<Any>,
-    val responses: Responses,
     val tags: List<String>
 )

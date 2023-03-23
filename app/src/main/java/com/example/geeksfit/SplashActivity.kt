@@ -10,8 +10,9 @@ import android.view.WindowManager
 import android.view.animation.TranslateAnimation
 import androidx.appcompat.app.AppCompatActivity
 import com.example.geeksfit.databinding.ActivitySplashBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
 

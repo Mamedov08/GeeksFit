@@ -6,7 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.geeksfit.R
+import com.example.geeksfit.databinding.FragmentNewPasswordBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class NewPasswordFragment : Fragment() {
 
     override fun onCreateView(

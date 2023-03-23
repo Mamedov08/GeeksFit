@@ -18,7 +18,7 @@ class GimAdapter(
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): _root_ide_package_.com.ui.gim.adapters.GimAdapter.GimViewHolder {
+    ): GimAdapter.GimViewHolder {
         return GimViewHolder(
             ItemGimBinding.inflate(
                 LayoutInflater.from(parent.context),
@@ -28,7 +28,7 @@ class GimAdapter(
     }
 
     override fun onBindViewHolder(
-        holder: _root_ide_package_.com.ui.gim.adapters.GimAdapter.GimViewHolder,
+        holder: GimAdapter.GimViewHolder,
         position: Int
     ) {
         holder.bind(data[position])

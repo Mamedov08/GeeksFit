@@ -1,4 +1,4 @@
-package com.ui.pay.fragments
+package com.example.geeksfit.ui.pay.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,7 +10,10 @@ import com.example.geeksfit.databinding.FragmentPlacePayBinding
 import com.ui.pay.adapters.PlacePayAdapter
 import com.ui.pay.model.Pay
 import com.ui.pay.model.PayPal
+import dagger.hilt.android.AndroidEntryPoint
 
+
+@AndroidEntryPoint
 class PlacePayFragment : Fragment() {
     private lateinit var binding: FragmentPlacePayBinding
 

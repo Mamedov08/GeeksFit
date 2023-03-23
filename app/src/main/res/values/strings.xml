@@ -75,4 +75,5 @@
     <string name="phone_number">Номер телефона</string>
     <string name="exit">ВЫЙТИ ИЗ АККАУНТА</string>
     <string name="add_photo">Сделать снимок</string>
+    <string name="bayone">BayOne</string>
 </resources>
