@@ -3,7 +3,7 @@
 
 ## API
 
-<a href="http://164.92.190.147:8880/swagger/" style="display:inline-block; background-color:#007bff; color:#fff; padding:10px; text-decoration:none;">
+<a href="http://164.92.190.147:8028/swagger/" style="display:inline-block; background-color:#007bff; color:#fff; padding:10px; text-decoration:none;">
   <img src="https://user-images.githubusercontent.com/98197909/222990768-452ebe01-9134-48af-b539-3dc9ef1eb179.png" width="100" height="100" alt="Кнопка">
 </a>  
 
