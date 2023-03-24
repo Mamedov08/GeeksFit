@@ -5,7 +5,7 @@ import com.example.geeksfit.data.remote.model.fovoritetraining.FavoriteTraining
 import com.example.geeksfit.data.remote.model.fovoritetraining.User
 import com.example.geeksfit.data.remote.model.login.RegistrationBody
 import com.example.geeksfit.data.remote.model.personalinform.PersonalInform
-import com.example.geeksfit.data.remote.model.trainings.TrainingsResponse
+import com.example.geeksfit.data.remote.model.trainings.Trainings
 
 data class Definitions(
     val FavoriteTraining: FavoriteTraining,
@@ -14,6 +14,6 @@ data class Definitions(
     val PersonalInform: PersonalInform,
     val Register: RegistrationBody,
     val Training: TrainingX,
-    val TrainingDetail: TrainingsResponse,
+    val TrainingDetail: Trainings,
     val User: User
 )

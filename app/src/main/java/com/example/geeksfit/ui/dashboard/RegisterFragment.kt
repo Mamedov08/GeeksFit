@@ -6,8 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.example.geeksfit.R
+import com.example.geeksfit.core.Status
 import com.example.geeksfit.data.remote.model.login.LoginBody
 import com.example.geeksfit.data.remote.model.login.RegistrationBody
 import com.example.geeksfit.databinding.FragmentRegisterBinding
@@ -31,6 +33,12 @@ class RegisterFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+      /*  if (vm.pref.getToken()!= null) {
+            findNavController().navigate(R.id.payFragment)
+        }
+        */
+
         onClick()
 
     }
@@ -43,12 +51,40 @@ class RegisterFragment : Fragment() {
                 username = binding.RgTextPersonName1.text.toString()
             )
         ).observe(viewLifecycleOwner) { registerResponse ->
-            vm.postLogin(LoginBody(registerResponse.username, registerResponse.password))
-                .observe(viewLifecycleOwner) { loginResponse ->
-                    vm.saveTokens(loginResponse)
+            when (registerResponse.status) {
+                Status.SUCCESS ->{
+                    vm.saveName(registerResponse.data!!)
                     requireActivity().showToast("Успешно")
-                    findNavController().navigate(R.id.payFragment)
+                    findNavController().navigate(R.id.loginFragment)
+                   /* if (registerResponse.data != null)
+                    vm.postLogin(LoginBody(registerResponse.data.username, registerResponse.data.password))
+                        .observe(viewLifecycleOwner) { loginResponse ->
+
+                            when(loginResponse.status){
+                                Status.SUCCESS ->{
+                                    vm.saveTokens(loginResponse.data!!)
+                                    requireActivity().showToast("Успешно")
+                                    findNavController().navigate(R.id.loginFragment)
+                                }
+                                Status.LOADING ->{}
+                                Status.ERROR ->{
+                                    requireActivity().showToast(loginResponse.message!!)
+                                }
+                            }
+                        }*/
+
                 }
+                Status.LOADING ->{}
+                Status.ERROR ->{
+                    requireActivity().showToast(registerResponse.message!!)
+
+                }
+
+
+            }
+
+
+
 
         }
     }

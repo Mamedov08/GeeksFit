@@ -33,14 +33,18 @@ class CardRepository @Inject constructor(private val api: CardService) {
         val data: MutableLiveData<List<CardBody>> = MutableLiveData()
 
         api.getMyCard().enqueue(object : Callback<List<CardBody>> {
-            override fun onResponse(call: Call<List<CardBody>>, response: Response<List<CardBody>>) {
+            override fun onResponse(
+                call: Call<List<CardBody>>,
+                response: Response<List<CardBody>>
+            ) {
                 if (response.isSuccessful) {
                     data.postValue(response.body())
                 }
             }
 
             override fun onFailure(call: Call<List<CardBody>>, t: Throwable) {
-                Log.e("raya", "onFailure: ${t.message}")  }
+                Log.e("raya", "onFailure: ${t.message}")
+            }
         })
 
         return data

@@ -5,15 +5,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
+import com.example.geeksfit.R
+import com.example.geeksfit.core.Status
+import com.example.geeksfit.data.remote.model.trainings.ResponseTrainings
 import com.example.geeksfit.databinding.FragmentGimBinding
 import com.example.geeksfit.ui.gim.adapters.GimAdapter
-import com.example.geeksfit.ui.gim.model.GimModel
+import com.example.geeksfit.ui.showToast
+
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class GimFragment : Fragment() {
+class GimFragment : Fragment(),GimAdapter.OnItemClick {
     private lateinit var binding: FragmentGimBinding
-    private lateinit var adapter: GimAdapter
+    private var easyAdapter= GimAdapter()
+    private val vm : TrainingsVieModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,47 +33,47 @@ class GimFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        initAdapter()
+        easyAdapter.setListener(this)
+
+        setupRecycler()
+        getTrainingsEasy()
+        getTrainingsContinuing()
+        getTrainingsAdvanced()
+
     }
 
-    private fun initAdapter() {
-        loadData()
-    }
-
-    private fun loadData() {
-        val list = ArrayList<GimModel>()
-        list.apply {
-//
-//            add(GimModel(
-//                R.string.fit_first (
-//                R.drawable.img, R.string.n_hand,
-//                R.drawable.img_1,R.string.a_hand,
-//                R.drawable.img_2,R.string.b_hand,
-//                R.drawable.img_3,R.string.c_hand,
-//                R.drawable.img_4,R.string.e_hand)
-//
-//                R.string.fit_second (
-//                R.drawable.img, R.string.p_hand,
-//                R.drawable.img_1,R.string.f_hand,
-//                R.drawable.img_2,R.string.g_hand,
-//                R.drawable.img_3,R.string.h_hand,
-//                R.drawable.img_4,R.string.i_hand)
-//
-//                R.string.fit_third(
-//                R.drawable.img, R.string.d_hand,
-//                R.drawable.img_1,R.string.j_hand,
-//                R.drawable.img_2,R.string.k_hand,
-//                R.drawable.img_3,R.string.l_hand,
-//                R.drawable.img_4,R.string.m_hand)
-//            ))
-
+    private fun getTrainingsAdvanced() {
+        vm.getTrainingsAdvanced(1).observe(viewLifecycleOwner){
+            easyAdapter.addList(it)
         }
-        adapter = GimAdapter(list, this::onClickItem)
-        binding.rView.adapter = adapter
     }
 
-    private fun onClickItem(model: GimModel) {
+    private fun getTrainingsContinuing() {
+       vm.getTrainingsCounting(1).observe(viewLifecycleOwner){
+           easyAdapter.addList(it)
+       }
+    }
+
+    private fun getTrainingsEasy() {
+
+        vm.getTrainingsEasy(1).observe(viewLifecycleOwner){dataResponse ->
+           if (dataResponse.isNotEmpty()){
+               easyAdapter.addList(dataResponse)
+           }
+        }
 
     }
+
+  private fun setupRecycler(){
+      binding.rvBegin.adapter = easyAdapter
+      binding.rvContinuing.adapter = easyAdapter
+      binding.rvAdvanced.adapter = easyAdapter
+    }
+
+
+    override fun onItemClick(list: ResponseTrainings) {
+        findNavController().navigate(R.id.detailFragment)
+    }
+
 
 }

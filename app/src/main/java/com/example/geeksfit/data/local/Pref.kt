@@ -31,11 +31,29 @@ class Pref(context: Context) {
         return pref.getString(IMAGE_PROFILE, "")
     }
 
+    fun saveName(name: String) {
+        pref.edit().putString(SAVE_NAME, name).apply()
+    }
+
+    fun getName(): String? {
+        return pref.getString(SAVE_NAME, "")
+    }
+    fun saveEmail(name: String) {
+        pref.edit().putString(SAVE_EMAIL, name).apply()
+    }
+
+    fun getEmail(): String? {
+        return pref.getString(SAVE_EMAIL, "")
+    }
+
     companion object {
         private const val TOKEN = "token"
         private const val ACCESS_TOKEN = "access_token"
         private const val IMAGE_PROFILE = "image.profile"
         private const val PREF_NAME = "geeks_fit"
+        private const val SAVE_NAME = "save_name"
+        private const val SAVE_EMAIL = "save_email"
+
 
     }
 

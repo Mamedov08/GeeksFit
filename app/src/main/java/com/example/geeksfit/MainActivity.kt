@@ -6,24 +6,32 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.geeksfit.data.local.Pref
 import com.example.geeksfit.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
+class MainActivity  : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val navView: BottomNavigationView = binding.navView
         navController = findNavController(R.id.nav_host_fragment_activity_main)
+
+      /*  if (pref.getToken() != null){
+            navController.navigate(R.id.payFragment)
+        }else{
+            navController.navigate(R.id.registerFragment)
+        }*/
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
             if (destination.id == R.id.registerFragment || destination.id == R.id.loginFragment || destination.id == R.id.registrationFragment || destination.id == R.id.newPasswordFragment || destination.id == R.id.forgotPasswordFragment || destination.id == R.id.succesPasswordFragment || destination.id == R.id.verificationFragment) {

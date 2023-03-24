@@ -59,6 +59,9 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.tvName.text = pref.getName()
+        binding.tvEmail.text = pref.getEmail()
+
         initClicker()
         registerPictures()
         getPersonData()

@@ -12,7 +12,7 @@ import retrofit2.http.POST
 interface LoginService {
 
     @GET("users/login/")
-    fun getLogin(): Call<Login>
+    fun getLogin(): Call<LoginBody>
 
     @POST("users/login/")
     fun postLogin(

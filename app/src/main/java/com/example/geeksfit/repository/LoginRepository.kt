@@ -1,8 +1,9 @@
 package com.example.geeksfit.repository
 
-import android.util.Log
+
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.geeksfit.data.remote.ApiService
+import com.example.geeksfit.core.Resource
 import com.example.geeksfit.data.remote.LoginService
 import com.example.geeksfit.data.remote.model.login.LoginBody
 import com.example.geeksfit.data.remote.model.login.LoginResponse
@@ -14,17 +15,20 @@ import javax.inject.Inject
 
 class LoginRepository @Inject constructor(private val api: LoginService) {
 
-    fun postLogin(loginBody: LoginBody): MutableLiveData<LoginResponse> {
-        val data: MutableLiveData<LoginResponse> = MutableLiveData()
+    fun postLogin(loginBody: LoginBody): LiveData<Resource<LoginResponse>> {
+        val data = MutableLiveData<Resource<LoginResponse>>()
+        data.value = Resource.loading()
+
         api.postLogin(loginBody).enqueue(object : Callback<LoginResponse> {
             override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
                 if (response.isSuccessful) {
-                    data.postValue(response.body())
+                    data.value = Resource.success(response.body())
                 }
             }
 
             override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
-                Log.e("raya", "onFailure: ${t.message}")
+                print(t.stackTrace)
+                data.value = Resource.error(t.stackTrace.toString(), null, null)
 
             }
 
@@ -33,21 +37,23 @@ class LoginRepository @Inject constructor(private val api: LoginService) {
     }
 
 
-    fun postRegistration(registrationBody: RegistrationBody): MutableLiveData<RegistrationBody> {
-        val data: MutableLiveData<RegistrationBody> = MutableLiveData()
+    fun postRegistration(registrationBody: RegistrationBody): LiveData<Resource<RegistrationBody>> {
+        val data= MutableLiveData<Resource<RegistrationBody>>()
+        data.value = Resource.loading()
+
         api.postRegister(registrationBody).enqueue(object : Callback<RegistrationBody> {
             override fun onResponse(
                 call: Call<RegistrationBody>,
                 response: Response<RegistrationBody>
             ) {
                 if (response.isSuccessful) {
-                    data.postValue(response.body())
+                    data.value = Resource.success(response.body())
                 }
             }
 
             override fun onFailure(call: Call<RegistrationBody>, t: Throwable) {
-
-                Log.e("raya", "onFailure: ${t.message}")
+                print(t.stackTrace)
+                data.value = Resource.error(t.stackTrace.toString(), null, null)
             }
 
         })

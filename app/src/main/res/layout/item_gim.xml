@@ -1,178 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/page_16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/light_gray"
-    android:layout_height="wrap_content">
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/titleTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/page_16dp"
-        android:text="@string/fit_first"
-        android:textStyle="normal"
-        android:textSize="@dimen/size_24sp"
-        android:paddingStart="@dimen/page_16dp"
-        android:paddingTop="@dimen/page_16dp"
-        android:paddingBottom="@dimen/page_16dp"
-        android:paddingEnd="@dimen/page_16dp"
-        android:layout_marginTop="8dp"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="RtlSymmetry,SpUsage" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardViewA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:cardCornerRadius="12dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginVertical="12dp"
         app:strokeColor="@android:color/darker_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="1dp"
+            android:layout_marginTop="6dp">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Начинающие:"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="24sp"/>
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Начинающие:"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+
 
         <ImageView
             android:id="@+id/fitImageA"
             android:layout_width="360dp"
             android:layout_height="100dp"
             android:background="@drawable/im"
-            android:scaleType="centerCrop"/>
-
-        <TextView
-            android:id="@+id/playlistTvA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/page_4dp"
-            android:layout_marginStart="@dimen/page_24dp"
-            android:background="@drawable/playlist"
-            android:text="@string/n_hand"
-            android:textStyle="normal"
-            android:textSize="@dimen/size_20sp"
-            android:textColor="@color/light_color"/>
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardViewB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:cardCornerRadius="12dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="12dp"
-        app:strokeColor="@android:color/darker_gray">
-
-        <ImageView
-            android:id="@+id/fitImageB"
-            android:layout_width="360dp"
-            android:layout_height="100dp"
-            android:background="@drawable/img_1"
-            android:scaleType="centerCrop"/>
-
-        <TextView
-            android:id="@+id/playlistTvB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/page_4dp"
-            android:layout_marginStart="@dimen/page_24dp"
-            android:background="@drawable/playlist"
-            android:text="@string/a_hand"
-            android:textStyle="normal"
-            android:textSize="@dimen/size_20sp"
-            android:textColor="@color/light_color"/>
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardViewC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:cardCornerRadius="12dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="12dp"
-        app:strokeColor="@android:color/darker_gray">
-
-        <ImageView
-            android:id="@+id/fitImageC"
-            android:layout_width="360dp"
-            android:layout_height="100dp"
-            android:background="@drawable/img_2"
-            android:scaleType="centerCrop"/>
-
-        <TextView
-            android:id="@+id/playlistTvC"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/page_4dp"
-            android:layout_marginStart="@dimen/page_24dp"
-            android:background="@drawable/playlist"
-            android:text="@string/b_hand"
-            android:textStyle="normal"
-            android:textSize="@dimen/size_20sp"
-            android:textColor="@color/light_color"/>
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardViewD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:cardCornerRadius="12dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="12dp"
-        app:strokeColor="@android:color/darker_gray">
-
-        <ImageView
-            android:id="@+id/fitImageD"
-            android:layout_width="360dp"
-            android:layout_height="100dp"
-            android:background="@drawable/img_3"
-            android:scaleType="centerCrop"/>
-
-        <TextView
-            android:id="@+id/playlistTvD"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/page_4dp"
-            android:layout_marginStart="@dimen/page_24dp"
-            android:background="@drawable/playlist"
-            android:text="@string/c_hand"
-            android:textStyle="normal"
-            android:textSize="@dimen/size_20sp"
-            android:textColor="@color/light_color"/>
-    </com.google.android.material.card.MaterialCardView>
+            android:scaleType="centerCrop" />
 
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardViewE"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:cardCornerRadius="12dp"
-        android:layout_gravity="center"
-        app:strokeColor="@android:color/darker_gray">
-
-        <ImageView
-            android:id="@+id/fitImageE"
-            android:layout_width="360dp"
-            android:layout_height="100dp"
-            android:background="@drawable/img_4"
-            android:scaleType="centerCrop"/>
-
-        <TextView
-            android:id="@+id/playlistTvE"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/page_4dp"
-            android:layout_marginStart="@dimen/page_24dp"
-            android:background="@drawable/playlist"
-            android:text="@string/e_hand"
-            android:textStyle="normal"
-            android:textSize="@dimen/size_20sp"
-            android:textColor="@color/light_color"/>
     </com.google.android.material.card.MaterialCardView>
 
 

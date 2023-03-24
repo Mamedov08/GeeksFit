@@ -95,6 +95,11 @@
         android:name="com.example.geeksfit.ui.profile.mycardfragment.MyCards"
         android:label="fragment_my_cards"
         tools:layout="@layout/fragment_my_cards" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.geeksfit.ui.gim.ui.DetailFragment"
+        android:label="DetailFragment"
+        tools:layout="@layout/fragment_detail"/>
 
 
 </navigation>
